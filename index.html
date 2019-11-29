@@ -11,18 +11,15 @@
     <!--     Place the script for aframe extras here -->
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
     <!--     Place the script for the environment component here -->
-  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
 
     <!--     Place the script for the particle system component here -->
- <script src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.1.3/dist/aframe-particle-system-component.min.js"></script>
     <!--   Place the script for the teleport controls here -->
     <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
   </head>
   <body>
     <a-scene>
-
-      
-
       <a-assets>
         <!--   add your assets (3d models) here -->
         <a-asset-item
@@ -36,12 +33,12 @@
       </a-assets>
 
       <!--  add your environment here -->
-    <a-entity
+      <a-entity
         environment="ground: hills; groundColor: white; lighting: none;
                        groundColor2: grey; groundTexture: none; playArea: 1; groundYScale: 20"
       ></a-entity>
       <!--   add the particle system here -->
-  <a-entity
+      <a-entity
         position="0 2.25 -15"
         particle-system="preset: snow; particleCount: 1000; size: 2"
       ></a-entity>
@@ -57,19 +54,25 @@
 
       <!--   add your 3d models here -->
 
-      <a-entity gltf-model="#snowman" scale=".01 .01 .01"></a-entity>
+      <a-entity
+        gltf-model="#snowman"
+                src="https://cdn.glitch.com/4624097a-e4e7-42aa-bf5c-090d200d399a%2Fhologrpahic.webp?v=1575070931333"
+        scale=".01 .01 .01"
+      ></a-entity>
 
       <a-entity
         gltf-model="#tree"
+                src="https://cdn.glitch.com/4624097a-e4e7-42aa-bf5c-090d200d399a%2Ftreetexture.jpg?v=1575071315411"
         scale=".1 .1 .1"
         position="-2 0 -5"
       ></a-entity>
       <a-entity
         gltf-model="#tree"
+                src="https://cdn.glitch.com/4624097a-e4e7-42aa-bf5c-090d200d399a%2Ftreetexture.jpg?v=1575071315411"
         scale=".07 .07 .07"
         position="2 0 -5"
       ></a-entity>
-      
+
       <!--   <a-entity movement-controls position="0 0 0">
         <a-entity camera position="0 1.6 0" look-controls></a-entity>
       </a-entity> -->
